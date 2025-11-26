@@ -1,0 +1,44 @@
+# Python
+##################################
+# Ambientes virtuais (cruciais para ignorar)
+.venv
+venv
+.env
+__pycache__
+
+# Arquivos de bytecode (compilados)
+*.pyc
+
+# Arquivos de distribuição/build
+/dist
+/build
+*.egg-info/
+
+# Arquivos de log e testes
+*.log
+.coverage
+
+# Banco de dados local (banco.db)
+# IMPORTANTE: Se o seu banco.db for um arquivo SQLite, é crucial que ele NÃO vá para o repositório.
+banco.db
+
+# Configurações do PyCharm / JetBrains (IDE)
+##################################
+# Pasta de configurações do PyCharm
+.idea/
+
+# Configurações de virtualenv ou cache geradas pela IDE
+# (Isso garante que cada desenvolvedor use suas próprias configurações)
+.vscode/
+
+# Configurações do FastAPI e Uvicorn
+##################################
+# Se você tiver arquivos de cache do Uvicorn
+.uvicorn-cache/
+
+# Configurações do Alembic (Migrações)
+##################################
+# Ignorar arquivos de migração gerados automaticamente se não forem versionados
+# Geralmente, as migrações são versionadas, mas incluímos para cautela
+# Caso você esteja ignorando a pasta 'alembic', remova o # abaixo:
+# alembic/versions/

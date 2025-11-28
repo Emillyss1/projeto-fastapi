@@ -17,24 +17,33 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e instalar a
 
 ### 1. Clonar o Repositório
 
-```bash
 # Navegue até a pasta onde deseja salvar o projeto
-git clone [https://github.com/Emillyss1/projeto_fastapi.git](https://github.com/Emillyss1/projeto_fastapi.git)
+```bash
+git clone https://github.com/Emillyss1/projeto-fastapi.git
 cd projeto-fastapi
+```
 
 2. Criar e Ativar o Ambiente Virtual
 É essencial usar um ambiente virtual para isolar as dependências do projeto.
 
 # Cria o ambiente virtual (.venv)
+```bash
 python -m venv .venv
+```
 
-Para ativar o ambiente:Sistema OperacionalComando de AtivaçãoWindows (CMD/PowerShell).\.venv\Scripts\activateLinux/macOSsource ./.venv/bin/activate
+# Para ativar o ambiente:
+```
+Sistema Operacional Comando de Ativação
+Windows (CMD/PowerShell).\.venv\Scripts\activate
+Linux/macOSsource ./.venv/bin/activate
+```
 
-▶️ Executando a API
+# ▶️ Executando a API
 1. Aplicar Migrações do Banco de Dados
 Este projeto utiliza Alembic para gerenciar o esquema do banco de dados (seu arquivo banco.db). Certifique-se de que o banco está atualizado:
-
+```
 alembic upgrade head
+```
 
 2. Iniciar o Servidor
 Inicie o servidor Uvicorn para rodar a aplicação FastAPI:
